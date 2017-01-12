@@ -2,9 +2,9 @@
 
 python3.5 ./tests.py >/dev/null 2>&1
 
-result = $?
+exit_code = $?
 
 if [result != 0]; then
 	echo 'tests.py fails with an error. Commit was interrupted!'
-	exit $result
+	exit $exit_code 
 fi
