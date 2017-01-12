@@ -18,7 +18,9 @@
     
     
     ~ cd 14_pre_commit_hook
+    
     ~ mv pre-commit .git/hooks/
+    
     ~ chmod +x pre_commit
 
 * При вызове `git commit` или `git commit -m` хук стартует и запускает tests.py.
