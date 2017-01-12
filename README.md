@@ -15,13 +15,12 @@
 
 * Переходим в папку c проектом, перемещаем скрипт pre-commit в папку .git/hooks/ , 
  даем права на выполнение:
-    
-    
-    ~ cd 14_pre_commit_hook
-    
-    ~ mv pre-commit .git/hooks/
-    
-    ~ chmod +x pre_commit
+ 
+ `~ cd 14_pre_commit_hook`
+ 
+ `~ mv pre-commit .git/hooks/`
+ 
+ `~ chmod +x pre_commit`
 
 * При вызове `git commit` или `git commit -m` хук стартует и запускает tests.py.
   Если все ОК - коммит выполняется. Если тесты упали - коммит прервется с предупреждением.
